@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" tools:context="com.jonny.mascaras.Task"
+    android:background="@color/negro"
+    android:id="@+id/l">
+
+        <AbsoluteLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/negro"
+            android:id="@+id/task">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/cont">
+
+                <com.jonny.mascaras.model.Video
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/videoView"
+                   />
+
+            </RelativeLayout>
+    </AbsoluteLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_unlocked"
+        android:layout_centerInParent="true"
+        android:background="@color/transparente"
+        android:rotation="90"
+        android:onClick="block"
+        android:alpha="0.8"
+        android:visibility="gone"
+        android:id="@+id/padlock"/>
+</RelativeLayout>

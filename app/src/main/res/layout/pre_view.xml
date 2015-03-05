@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jonny.mascaras.PreView"
+    android:orientation="vertical"
+    android:background="@color/negro">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/text">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:onClick="volver"
+            android:paddingRight="@dimen/boton"
+            android:layout_centerVertical="true"
+            android:background="@drawable/atras"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/titulo"
+            android:id="@+id/title"
+            android:background="@color/text"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/mascara"
+            android:background="@color/blanco"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/gris">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="@dimen/boton"
+            android:paddingRight="@dimen/boton"
+            android:onClick="ver"
+            android:background="@drawable/ver"
+            android:text="@string/play"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/titulo"
+            android:text="@string/det"
+            android:padding="10dp"
+            android:background="@color/gris"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fx"
+            android:alpha="0.2"
+            android:background="@color/gris"/>
+
+    </LinearLayout>
+</LinearLayout>

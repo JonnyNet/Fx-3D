@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fx-3D</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_video">Video</string>
+    <string name="title_activity_reproductor">Reproductor</string>
+    <string name="img_video">Imagen para video</string>
+    <string name="title_activity_pre_view">PreView</string>
+    <string name="det">Complete transformation of actual mask 3D, animation technology Halloween android</string>
+    <string name="play">PLAY ANIMATION</string>
+    <string name="title_activity_task">Task</string>
+
+</resources>
